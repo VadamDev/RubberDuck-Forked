@@ -1,6 +1,8 @@
 {
     "pack": {
-        "description": "Rubber-Duck resources",
-        "pack_format": 8
+        "description": {
+            "text": "Rubber-Duck resources"
+        },
+        "pack_format": 15
     }
 }

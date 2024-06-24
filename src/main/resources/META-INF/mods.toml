@@ -1,33 +1,32 @@
 modLoader="javafml"
-loaderVersion="[40,)"
-license="MIT License"
-issueTrackerURL="https://github.com/salvadormg15/Rubber-Duck/issues"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
 
 [[mods]]
-    modId="rubber_duck"
-    version="2.0.1-beta"
-    displayName="Rubber Duck"
-    updateJSONURL="https://gist.githubusercontent.com/salvadormg15/f73e087096fbc1718d101c6d61389352/raw/"
-    displayURL="https://www.curseforge.com/minecraft/mc-mods/rubber-duck"
-    logoFile="rubber_duck.png"
-    authors="Salvadormg15"
-    description="We just need a Rubber Duck to be happy"
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+updateJSONURL="https://gist.githubusercontent.com/salvadormg15/f73e087096fbc1718d101c6d61389352/raw/"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/rubber-duck"
+logoFile="rubber_duck.png"
+authors="${mod_authors}"
+description='''${mod_description}'''
 
-[[dependencies.rubber_duck]]
+[[dependencies.${mod_id}]]
     modId="forge"
     mandatory=true
-    versionRange="[40,)"
+    versionRange="${forge_version_range}"
     ordering="NONE"
     side="BOTH"
-[[dependencies.rubber_duck]]
+[[dependencies.${mod_id}]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2,1.19)"
+    versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
-[[dependencies.rubber_duck]]
+[[dependencies.${mod_id}]]
     modId="curios"
     mandatory=true
-    versionRange="[1.18.2-5.0.7.1,)"
+    versionRange="[5.3.0+1.20.1,)"
     ordering="NONE"
     side="BOTH"

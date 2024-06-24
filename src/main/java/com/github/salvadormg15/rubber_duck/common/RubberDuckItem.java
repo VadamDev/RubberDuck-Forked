@@ -1,6 +1,4 @@
-package com.github.salvadormg15.rubber_duck;
-
-import com.github.salvadormg15.rubber_duck.core.Registries;
+package com.github.salvadormg15.rubber_duck.common;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -15,13 +13,16 @@ public class RubberDuckItem extends BlockItem implements ICurioItem {
 	public RubberDuckItem(Block block, Properties properties) {
 		super(block, properties);
 	}
+
 	@Override
 	public boolean canEquip(ItemStack stack, EquipmentSlot armorType, Entity entity) {
-		if(armorType.equals(EquipmentSlot.HEAD)) return true;
-		return false;
+		return armorType.equals(EquipmentSlot.HEAD);
 	}
-	
-	//Curios stuff
+
+	/*
+	   Curios Stuff
+	 */
+
 	@Override
 	public boolean canEquipFromUse(SlotContext slotContext, ItemStack stack) {
 		return true;

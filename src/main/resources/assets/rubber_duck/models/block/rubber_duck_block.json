@@ -1,8 +1,8 @@
 {
 	"credit": "Designed by Salvador ---- github/salvadormg15",
 	"textures": {	
-		"0": "rubber_duck:blocks/rubber_duck",
-		"particle": "rubber_duck:blocks/rubber_duck"
+		"0": "rubber_duck:block/rubber_duck",
+		"particle": "rubber_duck:block/rubber_duck"
 	},
 	"elements": [
 		{
