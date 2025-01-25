@@ -3,7 +3,6 @@ package com.github.salvadormg15.rubber_duck.common.events;
 import com.github.salvadormg15.rubber_duck.RubberDuck;
 import com.github.salvadormg15.rubber_duck.common.Registries;
 import com.github.salvadormg15.rubber_duck.common.config.CommonConfig;
-import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -28,7 +27,7 @@ public class ForgeEventHandler {
 
         //Checks the Mod Config
         if((entity instanceof Zombie && CommonConfig.getSpawnsOnZombies()) || (entity instanceof Skeleton && CommonConfig.getSpawnsOnSkeletons())) {
-            final var chance = entity.level().getRandom().nextDouble();
+            final var chance = entity.getRandom().nextDouble();
 
             if(chance <= CommonConfig.getEntitySpawnChance())
                 entity.setItemSlot(EquipmentSlot.HEAD, Registries.RUBBER_DUCK_ITEM.get().getDefaultInstance());
@@ -50,7 +49,7 @@ public class ForgeEventHandler {
                     .equals(getRegistryName(Registries.RUBBER_DUCK_ITEM.get()).getPath()));
 
             //Drop randomized
-            final var chance = entity.level().getRandom().nextDouble();
+            final var chance = entity.getRandom().nextDouble();
             if(chance <= CommonConfig.getDropChance()) {
                 final var pos = entity.blockPosition();
 
