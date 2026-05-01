@@ -1,12 +1,12 @@
 package com.github.salvadormg15.rubber_duck.common;
 
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
+import org.jetbrains.annotations.Nullable;
 import top.theillusivec4.curios.api.SlotContext;
-import top.theillusivec4.curios.api.type.capability.ICurio;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 public class RubberDuckItem extends BlockItem implements ICurioItem {
@@ -15,21 +15,18 @@ public class RubberDuckItem extends BlockItem implements ICurioItem {
 	}
 
 	@Override
-	public boolean canEquip(ItemStack stack, EquipmentSlot armorType, Entity entity) {
+	public boolean canEquip(ItemStack stack, EquipmentSlot armorType, LivingEntity entity) {
 		return armorType.equals(EquipmentSlot.HEAD);
 	}
 
-	/*
-	   Curios Stuff
-	 */
+	@Nullable
+	@Override
+	public EquipmentSlot getEquipmentSlot(ItemStack stack) {
+		return EquipmentSlot.HEAD;
+	}
 
 	@Override
 	public boolean canEquipFromUse(SlotContext slotContext, ItemStack stack) {
 		return true;
-	}
-
-	@Override
-	public ICurio.SoundInfo getEquipSound(SlotContext slotContext, ItemStack stack) {
-		return new ICurio.SoundInfo(Registries.RUBBER_DUCK_PLACE.get(), 0.8f, 1.0f);
 	}
 }
