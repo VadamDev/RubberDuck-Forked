@@ -4,5 +4,15 @@
 	"rubber_duck_use": "Rubber Duck Sound",
     "rubber_duck_use.sub": "Rubber Duck Sound",
     "rubber_duck_place": "Rubber Duck Place Sound",
-    "rubber_duck_place.sub": "Rubber Duck Place Sound"
+    "rubber_duck_place.sub": "Rubber Duck Place Sound",
+
+    "rubber_duck.configuration.Spawn on mobs": "Mobs related configuration",
+    "rubber_duck.configuration.SpawnWithChance": "Spawn with chance",
+    "rubber_duck.configuration.DropChance": "Drop Chance",
+    "rubber_duck.configuration.Zombies": "Spawn on Zombies",
+    "rubber_duck.configuration.Skeletons": "Spawn on Skeletons",
+
+    "rubber_duck.configuration.Loot Chests": "Loot chests related configuration",
+    "rubber_duck.configuration.Enabled": "Add to vanilla loot chests",
+    "rubber_duck.configuration.ChestLootChance": "Loot Chance"
 }

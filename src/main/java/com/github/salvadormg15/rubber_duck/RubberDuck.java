@@ -15,16 +15,16 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import top.theillusivec4.curios.api.client.CuriosRendererRegistry;
 
-@Mod("rubber_duck")
+@Mod(RubberDuck.MOD_ID)
 public class RubberDuck {
     public static final String MOD_ID = "rubber_duck";
 
-    public RubberDuck(IEventBus bus, ModContainer modContainer) {
+    public RubberDuck(IEventBus bus, ModContainer mod) {
         bus.addListener(this::onConfigEvent);
     	bus.addListener(this::clientSetup);
         bus.addListener(this::addCreative);
 
-        modContainer.registerConfig(ModConfig.Type.COMMON, CommonConfig.SPEC);
+        mod.registerConfig(ModConfig.Type.COMMON, CommonConfig.SPEC);
 
         Registries.register(bus);
         NeoForge.EVENT_BUS.register(NeoForgeEventHandler.class);
