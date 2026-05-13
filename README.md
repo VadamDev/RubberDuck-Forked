@@ -4,9 +4,6 @@ Forked version of [salvadormg15's Rubber Duck Mod](https://github.com/salvadormg
 <br>
 At time I'm writing this, the official RubberDuck mod and RubberDuck ReHatched hasn't been updated since a year so I decided to make this fork.
 
-### 1.21 State
-I'm waiting for 1.21 to stabilize before updating the mod to this version
-
 ### Looking for 1.19 ?
 Check out [Rubber Duck ReHatched](https://www.curseforge.com/minecraft/mc-mods/rubber-duck-rehatched)
 
